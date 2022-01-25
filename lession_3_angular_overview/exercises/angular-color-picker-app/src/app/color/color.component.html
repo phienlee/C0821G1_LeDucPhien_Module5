@@ -1,0 +1,5 @@
+<div class="colorPicker" [ngStyle]="changeBackground()">
+  <label for="color">Choose color</label>
+  <input type="color" id="color" [(ngModel)]="color">
+  <p [style.backgroundColor]="color" style="color: white">Color: {{color}}</p>
+</div>

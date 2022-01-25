@@ -1,0 +1,33 @@
+<div class="container m-auto w-50 mt-5">
+  <div style="text-align: center">
+    <h2 class="h2 text-info">
+      {{title}}
+    </h2>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">number 1</span>
+      </div>
+      <input type="number" class="form-control" name="num1" (change)="setValue1($event)" placeholder="enter number 1"
+             aria-label="Amount (to the nearest dollar)">
+      <div class="input-group-append">
+        <span class="input-group-text">.00</span>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">number 2</span>
+      </div>
+      <input type="number" class="form-control" name="num2" (change)="setValue2($event)" placeholder="enter number 2"
+             aria-label="Amount (to the nearest dollar)">
+      <div class="input-group-append">
+        <span class="input-group-text">.00</span>
+      </div>
+    </div>
+    <button class="btn btn-danger" style="margin-right: 5px" (click)="add()">Add</button>
+    <button class="btn btn-warning" style="margin-right: 5px" (click)="sub()">Subtract</button>
+    <button class="btn btn-info" style="margin-right: 5px" (click)="multiply()">Multiply</button>
+    <button class="btn btn-primary" (click)="divide()">Divide</button>
+    <h3 class="h3 text-danger" style="text-align: left">Result : {{result}}</h3>
+  </div>
+</div>
+
