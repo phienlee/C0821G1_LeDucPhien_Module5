@@ -1,0 +1,7 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(35,50,24,0.16);
+  height: 100vh;
+}

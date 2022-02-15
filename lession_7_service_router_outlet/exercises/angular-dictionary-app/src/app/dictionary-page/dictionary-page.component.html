@@ -1,0 +1,42 @@
+<table border="1">
+  <tr>
+    <th>#</th>
+    <th>English Word</th>
+    <th>Vietnamese Mean</th>
+    <th>Details</th>
+  </tr>
+  <tr *ngFor="let w of words; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{w.englishMean}}</td>
+    <td>{{w.vietnameseMean}}</td>
+    <td>
+      <a [routerLink]="['/dictionary/details', w.englishMean]">Details</a>
+
+    </td>
+  </tr>
+</table>
+
+<div class="row">
+  <div class="col-md-6">
+    <textarea name="englishMean" class="form-control" id="englishMean" cols="100%" rows="3"
+              style="border: 2px solid green" [(ngModel)]="englishMean"></textarea>
+  </div>
+  <div class="col-md-6">
+    <textarea name="vietnameseMean" id="vietnameseMean" cols="100%" rows="3" class="form-control"
+              style="border: 2px solid green" [(ngModel)]="vietnameseMean">
+    </textarea>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="container text-center">
+    <button type="" submit class="btn btn-outline-secondary btn-success text-white"
+            (click)="getVietnameseMeanByEnglishWord(englishMean)">En-vn
+
+    </button>
+    <button type="" submit class="btn btn-outline-secondary btn-danger text-white"
+            (click)="getEnglishMeanByWord(vietnameseMean)">Vn-En
+    </button>
+  </div>
+</div>
+
