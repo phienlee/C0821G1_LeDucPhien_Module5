@@ -4,6 +4,7 @@ import { CustomerComponent } from './customer.component';
 import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
 import { ListComponent } from './list/list.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -16,7 +17,8 @@ import { ListComponent } from './list/list.component';
         ListComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        ReactiveFormsModule
     ]
 })
 export class CustomerModule { }
