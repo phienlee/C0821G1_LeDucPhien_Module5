@@ -8,19 +8,21 @@ import {HeaderModule} from "./header/header.module";
 import {CustomerModule} from "./customer/customer.module";
 import { ListContractComponent } from './contract/list-contract/list-contract.component';
 import { NewContractComponent } from './contract/new-contract/new-contract.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     ListContractComponent,
-    NewContractComponent
+    NewContractComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
-    CustomerModule
+    CustomerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

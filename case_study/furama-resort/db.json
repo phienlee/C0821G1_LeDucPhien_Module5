@@ -1,0 +1,84 @@
+{
+  "customers": [
+    {
+      "name": "Le Duc Phien",
+      "birthday": "2022-02-03",
+      "gender": "nam",
+      "phoneNumber": "0909090909",
+      "email": "phienle@gmail.com",
+      "address": "Hn",
+      "customerType": "Diamond",
+      "id": 1
+    },
+    {
+      "name": "Nguyen Van A",
+      "birthday": "2022-02-07",
+      "gender": "nam",
+      "phoneNumber": "0909090909",
+      "email": "a@gmail.com",
+      "address": "Da Nang",
+      "customerType": "Diamond",
+      "id": 2
+    },
+    {
+      "name": "Nguyen Van B",
+      "birthday": "2022-03-09",
+      "gender": "nam",
+      "phoneNumber": "0909090909",
+      "email": "b@gmail.com",
+      "address": "Da Nang",
+      "customerType": "Diamond",
+      "id": 3
+    },
+    {
+      "name": "Nguyen Van C",
+      "birthday": "2022-02-23",
+      "gender": "nam",
+      "phoneNumber": "0909090909",
+      "email": "c@gmail.com",
+      "address": "Da Nang",
+      "customerType": "Diamond",
+      "id": 4
+    },
+    {
+      "name": "Nguyen Van D",
+      "birthday": "2022-03-09",
+      "gender": "nam",
+      "phoneNumber": "0909090909",
+      "email": "d@gmail.com",
+      "address": "Da Nang",
+      "customerType": "Diamond",
+      "id": 5
+    },
+    {
+      "name": "Nguyen van lu",
+      "birthday": "2022-02-17",
+      "gender": "nam",
+      "phoneNumber": "0909090909",
+      "email": "minh@gmail.com",
+      "address": "DaNang",
+      "customerType": "1",
+      "id": 6
+    },
+    {
+      "name": "Nguyen van luu",
+      "birthday": "2022-02-03",
+      "gender": "nu",
+      "phoneNumber": "0909090909",
+      "email": "phienlee3103@gmail.com",
+      "address": "Da Nang",
+      "customerType": "Diamond",
+      "id": 7
+    },
+    {
+      "name": "Le Duc d",
+      "birthday": "2022-02-02",
+      "gender": "nam",
+      "phoneNumber": "0909211212",
+      "email": "a@gmail.com",
+      "address": "Hn",
+      "customerType": "gold",
+      "id": 8
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-edit',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditComponent implements OnInit {
 
+  customerForm: FormGroup;
+
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  findById(id: number){
   }
 
 }
