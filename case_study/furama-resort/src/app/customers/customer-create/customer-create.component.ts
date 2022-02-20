@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {CustomerServiceService} from "../../services/customer-service.service";
 import {Router, RouterModule} from "@angular/router";
@@ -13,11 +13,12 @@ import Swal from 'sweetalert2';
 export class CustomerCreateComponent implements OnInit {
 
   customerForm: FormGroup = new FormGroup({
+    customerCode: new FormControl('', [Validators.required, Validators.pattern('^[K][H]-[\\d]{4}$')]),
     name: new FormControl('', [Validators.required, Validators.pattern('^[A-Za-z ]+$')]),
     birthday: new FormControl('', [Validators.required]),
     gender: new FormControl('', [Validators.required]),
     phoneNumber: new FormControl('', [Validators.required, Validators.maxLength(11), Validators.minLength(10)
-      , Validators.pattern('^[0-9]+$')]),
+      , Validators.pattern('^(090|031)+([0-9]{8})$')]),
     email: new FormControl('', [Validators.email]),
     address: new FormControl('', [Validators.required, Validators.maxLength(256)]),
     customerType: new FormControl('', [Validators.required])
@@ -31,12 +32,16 @@ export class CustomerCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(){
+  onSubmit() {
     const customer = this.customerForm.value;
     this.customerService.addCustomer(customer).subscribe(value => {
       this.callToast();
       this.router.navigate(['/customers/list']);
     });
+  }
+
+  get customerCode() {
+    return this.customerForm.get('customerCode')
   }
 
   get name() {
@@ -67,7 +72,7 @@ export class CustomerCreateComponent implements OnInit {
     return this.customerForm.get('customerType');
   }
 
-  callToast(){
+  callToast() {
     Swal.fire({
       position: 'top-end',
       icon: 'success',

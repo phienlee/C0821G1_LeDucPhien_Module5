@@ -64,11 +64,7 @@ export class ListContractComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAll();
-  }
 
-  getAll(){
-    this.contractList = CONTRACTS;
   }
 
 }

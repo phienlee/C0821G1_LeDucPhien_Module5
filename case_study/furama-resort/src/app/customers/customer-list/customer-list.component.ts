@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {ICustomer} from "../../customer/icustomer";
 import {CustomerServiceService} from "../../services/customer-service.service";
 import {Router} from "@angular/router";
+import {ICustomer} from "../icustomer";
+import Swal from "sweetalert2";
+
 
 @Component({
   selector: 'app-customer-list',
@@ -27,13 +29,11 @@ export class CustomerListComponent implements OnInit {
   getAll(){
     this.customerService.getAll().subscribe(customers => {
       this.customerList = customers;
-    })
+    });
   }
 
   passData(id: number, name: string) {
     this.checkDelete = true;
-    console.log("id:" + id);
-    console.log("name:" + name);
     this.id = id;
     this.name = name;
 
@@ -41,8 +41,18 @@ export class CustomerListComponent implements OnInit {
 
   delete() {
     this.customerService.deleteCustomer(this.id).subscribe(() => {
-      console.log('xóa'+this.id);
+      this.callToast()
       this.getAll();
+    })
+  }
+
+  callToast() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Delete customer successfully',
+      showConfirmButton: false,
+      timer: 2000
     })
   }
 }

@@ -13,8 +13,25 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="form-group">
+                  <label for="phone">Customer Code</label>
+                  <input formControlName="customerCode" type="text" class="form-control" id="customerCode"
+                         placeholder="Enter Phone">
+                  <div class="alert alert-danger"
+                       *ngIf="customerCode.invalid && (customerCode.dirty || customerCode.touched)">
+                    <div *ngIf="customerCode.errors.required">
+                      Customer code is required.
+                    </div>
+                    <div *ngIf="customerCode.errors.pattern">
+                      Customer code format KH-XXXX.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="form-group">
                   <label for="fullName">Full Name Customer</label>
-                  <input formControlName="name" type="text" class="form-control" id="fullName"  placeholder="Enter Full Name">
+                  <input formControlName="name" type="text" class="form-control" id="fullName"
+                         placeholder="Enter Full Name">
                   <div class="alert alert-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
                     <div *ngIf="name.errors.required">
                       Name is required.
@@ -28,13 +45,15 @@
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="form-group">
                   <label for="phone">Phone</label>
-                  <input formControlName="phoneNumber" type="text" class="form-control" id="phone"  placeholder="Enter Phone">
-                  <div class="alert alert-danger" *ngIf="phoneNumber.invalid && (phoneNumber.dirty || phoneNumber.touched)">
+                  <input formControlName="phoneNumber" type="text" class="form-control" id="phone"
+                         placeholder="Enter Phone">
+                  <div class="alert alert-danger"
+                       *ngIf="phoneNumber.invalid && (phoneNumber.dirty || phoneNumber.touched)">
                     <div *ngIf="phoneNumber.errors.required">
                       Phone number is required.
                     </div>
                     <div *ngIf="phoneNumber.errors.pattern">
-                      Phone number is only number.
+                      Phone number is format 090xxxxxxxx.
                     </div>
                   </div>
                 </div>
@@ -42,7 +61,8 @@
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="form-group">
                   <label for="address">Address</label>
-                  <input formControlName="address" type="text" class="form-control" id="address"  placeholder="Enter Address">
+                  <input formControlName="address" type="text" class="form-control" id="address"
+                         placeholder="Enter Address">
                   <div class="alert alert-danger" *ngIf="address.invalid && (address.dirty || address.touched)">
                     <div *ngIf="address.errors.required">
                       Address is required.
@@ -56,7 +76,7 @@
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="form-group">
                   <label for="email">Email</label>
-                  <input  formControlName="email" type="text" class="form-control" id="email"  placeholder="Enter Email">
+                  <input formControlName="email" type="text" class="form-control" id="email" placeholder="Enter Email">
                   <div class="alert alert-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
                     <div *ngIf="email.errors.required">
                       Email number is required.
@@ -73,7 +93,7 @@
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="form-group">
                   <label for="gender">Gender</label>
-                  <input formControlName="gender" type="text" class="form-control" id="gender"  placeholder="Enter Gender">
+                  <input formControlName="gender" class="form-control" id="gender" placeholder="Enter Gender">
                   <div class="alert alert-danger" *ngIf="gender.invalid && (gender.dirty || gender.touched)">
                     <div *ngIf="gender.errors.required">
                       Gender is required.
@@ -84,7 +104,8 @@
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="form-group">
                   <label for="birthday">Birthday</label>
-                  <input formControlName="birthday" type="date" class="form-control" id="birthday"  placeholder="Enter Birthday">
+                  <input formControlName="birthday" type="date" class="form-control" id="birthday"
+                         placeholder="Enter Birthday">
                   <div class="alert alert-danger" *ngIf="birthday.invalid && (birthday.dirty || birthday.touched)">
                     <div *ngIf="birthday.errors.required">
                       Birthday is required.
@@ -95,8 +116,10 @@
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="form-group">
                   <label for="customerType">Customer type</label>
-                  <input formControlName="customerType" type="text" class="form-control" id="customerType"  placeholder="Enter Customer type">
-                  <div class="alert alert-danger" *ngIf="customerType.invalid && (customerType.dirty || customerType.touched)">
+                  <input formControlName="customerType" type="text" class="form-control" id="customerType"
+                         placeholder="Enter Customer type">
+                  <div class="alert alert-danger"
+                       *ngIf="customerType.invalid && (customerType.dirty || customerType.touched)">
                     <div *ngIf="customerType.errors.required">
                       Customer type is required.
                     </div>
@@ -109,7 +132,9 @@
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="text-right">
                   <button type="button" id="submit" name="submit" class="btn btn-secondary">Cancel</button>
-                  <button type="submit" id="submit1" name="submit" class="btn btn-primary" [disabled]="customerForm.invalid">Add</button>
+                  <button type="submit" id="submit1" name="submit" class="btn btn-primary"
+                          [disabled]="customerForm.invalid">Add
+                  </button>
                 </div>
               </div>
             </div>

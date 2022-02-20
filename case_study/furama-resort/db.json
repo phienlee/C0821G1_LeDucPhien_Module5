@@ -1,26 +1,6 @@
 {
   "customers": [
     {
-      "name": "Le Duc Phien",
-      "birthday": "2022-02-03",
-      "gender": "nam",
-      "phoneNumber": "0909090909",
-      "email": "phienle@gmail.com",
-      "address": "Hn",
-      "customerType": "Diamond",
-      "id": 1
-    },
-    {
-      "name": "Nguyen Van A",
-      "birthday": "2022-02-07",
-      "gender": "nam",
-      "phoneNumber": "0909090909",
-      "email": "a@gmail.com",
-      "address": "Da Nang",
-      "customerType": "Diamond",
-      "id": 2
-    },
-    {
       "name": "Nguyen Van B",
       "birthday": "2022-03-09",
       "gender": "nam",
@@ -28,57 +8,134 @@
       "email": "b@gmail.com",
       "address": "Da Nang",
       "customerType": "Diamond",
-      "id": 3
+      "id": 2
     },
     {
+      "id": 3,
       "name": "Nguyen Van C",
+      "customerCode": "KH-1234",
       "birthday": "2022-02-23",
       "gender": "nam",
       "phoneNumber": "0909090909",
       "email": "c@gmail.com",
       "address": "Da Nang",
-      "customerType": "Diamond",
-      "id": 4
+      "customerType": "Diamond"
     },
     {
+      "id": 4,
       "name": "Nguyen Van D",
+      "customerCode": "KH-1235",
       "birthday": "2022-03-09",
       "gender": "nam",
       "phoneNumber": "0909090909",
       "email": "d@gmail.com",
       "address": "Da Nang",
-      "customerType": "Diamond",
-      "id": 5
+      "customerType": "Diamond"
     },
     {
-      "name": "Nguyen van lu",
-      "birthday": "2022-02-17",
-      "gender": "nam",
-      "phoneNumber": "0909090909",
-      "email": "minh@gmail.com",
-      "address": "DaNang",
-      "customerType": "1",
-      "id": 6
-    },
-    {
+      "id": 6,
       "name": "Nguyen van luu",
+      "customerCode": "KH-1234",
       "birthday": "2022-02-03",
       "gender": "nu",
       "phoneNumber": "0909090909",
       "email": "phienlee3103@gmail.com",
       "address": "Da Nang",
-      "customerType": "Diamond",
-      "id": 7
+      "customerType": "Diamond"
     },
     {
+      "id": 7,
       "name": "Le Duc d",
       "birthday": "2022-02-02",
       "gender": "nam",
       "phoneNumber": "0909211212",
       "email": "a@gmail.com",
       "address": "Hn",
-      "customerType": "gold",
-      "id": 8
+      "customerType": "gold"
+    },
+    {
+      "id": 8,
+      "name": "Le Duc Phien",
+      "birthday": "2022-02-20",
+      "gender": "nam",
+      "phoneNumber": "0909090909",
+      "email": "phienlee3103@gmail.com",
+      "address": "Da Nang",
+      "customerType": "Diamond"
+    }
+  ],
+  "contracts": [
+    {
+      "name": "Villa 9.1",
+      "area": 900,
+      "noOfFloors": 8,
+      "capacity": 10,
+      "rentalFee": 1000,
+      "rentalType": "Day",
+      "status": "available"
+    },
+    {
+      "name": "Villa 9.2",
+      "area": 900,
+      "noOfFloors": 8,
+      "capacity": 10,
+      "rentalFee": 1000,
+      "rentalType": "Day",
+      "status": "available"
+    },
+    {
+      "name": "Villa 9.3",
+      "area": 900,
+      "noOfFloors": 8,
+      "capacity": 10,
+      "rentalFee": 1000,
+      "rentalType": "Day",
+      "status": "available"
+    },
+    {
+      "name": "Villa 9.4",
+      "area": 900,
+      "noOfFloors": 8,
+      "capacity": 10,
+      "rentalFee": 1000,
+      "rentalType": "Day",
+      "status": "available"
+    },
+    {
+      "name": "Villa 9.5",
+      "area": 900,
+      "noOfFloors": 8,
+      "capacity": 10,
+      "rentalFee": 1000,
+      "rentalType": "Day",
+      "status": "available"
+    },
+    {
+      "name": "Villa 9.6",
+      "area": 900,
+      "noOfFloors": 8,
+      "capacity": 10,
+      "rentalFee": 1000,
+      "rentalType": "Day",
+      "status": "available"
+    },
+    {
+      "name": "Villa 9.7",
+      "area": 900,
+      "noOfFloors": 8,
+      "capacity": 10,
+      "rentalFee": 100,
+      "rentalType": "Day",
+      "status": "available"
+    },
+    {
+      "name": "Villa 9.8",
+      "area": 900,
+      "noOfFloors": 8,
+      "capacity": 10,
+      "rentalFee": 1000,
+      "rentalType": "Day",
+      "status": "available"
     }
   ]
 }
